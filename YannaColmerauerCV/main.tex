@@ -1,0 +1,248 @@
+% -- Encoding UTF-8 without BOM
+% -- XeLaTeX => PDF (BIBER)
+
+\documentclass[]{cv-style}          % Add 'print' as an option into the square bracket to remove colours from this template for printing. 
+                                    % Add 'espanol' as an option into the square bracket to change the date format of the Last Updated Text
+
+\sethyphenation[variant=british]{english}{} % Add words between the {} to avoid them to be cut 
+\usepackage{fontawesome}
+\usepackage{setspace}
+\usepackage{tikz}
+\usepackage{lipsum}
+\usepackage{tcolorbox}
+\usepackage{xcolor}
+\usepackage{hyphenat}
+\usepackage{hyperref}
+%\hypersetup{
+%    colorlinks=true,
+%    linkcolor=blue,
+%    filecolor=magenta,      
+%    urlcolor=cyan,
+%}
+\urlstyle{same}
+
+\begin{document}
+
+\header{Yanna}{Colmerauer}           % Your name
+\lastupdated
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION  -- In the aside, each new line forces a line break
+%----------------------------------------------------------------------------------------
+
+\begin{aside}
+%
+\section{Contact} 
+~
+\textcolor{darkpurple}{\faMapMarker} \hspace{0.1cm} 3/8 New John's Place, 
+\textbf{Edinburgh}, EH8 9XH, UK
+~
+\textcolor{darkpurple}{\faMapMarker} \hspace{0.1cm} Flat 26 Hillcrest Heights, 
+18-20 Hillcrest Road, 
+\textbf{London}, W5 1HJ, UK
+~
+\textcolor{darkpurple}{\faPhone} \hspace{0.1cm} +44 7713 850 840
+~
+\textcolor{darkpurple}{\faEnvelopeO} \hspace{0.1cm} \href{mailto:s1511803@ed.ac.uk}{s1511803@ed.ac.uk}
+\small{\href{mailto:yannacarolinafotografia@gmail.com}{\nohyphens{yannacarolinafotografia@gmail.com}}}
+~
+\normalsize{} \textcolor{darkpurple}{\faLinkedinSquare} \hspace{0.1cm} \url{www.linkedin.com/in/yannacolmerauer}
+~
+\textcolor{darkpurple}{\faInstagram} \hspace{0.1cm} \textcolor{darkpurple}{\faTwitter} \hspace{0.1cm} \href{https://www.instagram.com/yanna__carolina/}{@yanna\_\_carolina}
+~
+\textcolor{darkpurple}{\faicon{github}} \hspace{0.1cm} \href{https://github.com/ycpcds}{github.com/ycpcds}
+~
+%
+\section{Languages} 
+\textbf{English} (native, fluent),
+\textbf{Brazilian Portuguese} 
+(mother tongue, fluent),
+\textbf{French} (intermediate)
+~
+%
+\section{Programming}
+\skills{{R, Python, MATLAB /3.5}}
+\skills{{Java, \LaTeX{}, Markdown /2.75}}
+\skills{{SQL, Haskell /1.75}}
+\skills{{C++, HTML, CSS /1}}
+~
+%
+%\section{Education}
+%The University of Edinburgh | BSc Computer Science and Mathematics | Final Year student
+%~
+%
+\section{Software}
+Inkscape, Affinity Photo, GIMP, Luminar, Blender, RStudio, HitFilm Express, Trello, Slack, GitHub, Zoom, Microsoft Office (Teams, Outlook, Word, Excel, PowerPoint, Publisher)
+~
+%
+\section{Soft Skills}
+Communication, Teamwork, Adaptability, Quick Learner, Time Management, Problem Solving
+~
+%
+\section{Personal Interests}
+photography, videography, quidditch, origami, singing, social media content creation
+~
+%
+\end{aside}
+~
+\begin{tcolorbox}[colback=darkpurple!5!white,colframe=darkpurple!75!black]
+Undergraduate Computer Science and Mathematics student in her final year of study at The University of Edinburgh. A Brazilian, born and raised in London, with a passion for creative problem solving. Interested in the education sector, photography, data science, and how technology can be used to make significant change in the world.
+\end{tcolorbox}
+
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION %
+%----------------------------------------------------------------------------------------
+\section{Work Experience}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+  {Jul 2020 -- present}
+  {THE UNIVERSITY OF EDINBURGH - ASID PROJECT}
+  {Edinburgh, UK (remote)}
+  {\jobtitle{ASID Project Undergraduate Assistant}\\
+  Adapting and creating course content for the School of Mathematics to facilitate the move to hybrid teaching in the upcoming academic year due to Covid-19. With a focus on increasing awareness of the experiences of students with mental health difficulties, and giving my insight on how remote teaching can affect said struggles. \\
+  \textbf{Key Skills:} clear communication skills (whilst recording sample tutorial videos and participating in focus groups), \LaTeX{} and Markdown typesetting, coding SAGE/Python jupyter notebooks and writing auto-graded tests.} 
+%------------------------------------------------
+\entry
+  {Jun 2020 -- present}
+  {EM FUNDING}
+  {London, UK (remote)}
+  {\jobtitle{Publishing Designer Intern} \\
+  Working at an on-demand basis with the investment research area and the Senior Managers on relevant projects. \\
+  \textbf{Key Roles:} assisting the preparation and publication of detailed monthly fund/manager research reports; creating, maintaining and updating presentations and any other publications necessary to disseminate EM Funding written works.} 
+%------------------------------------------------
+\entry
+  {Sept 2019}
+  {THE UNIVERSITY OF EDINBURGH - OPEN DAY}
+  {Edinburgh, UK}
+  {\jobtitle{Informatics Student Ambassador}\\
+  I was at the forefront of promoting the School of Informatics to prospective students, including leading guided tours, manning the information desk, and answering visitors' questions}
+%------------------------------------------------
+%\entry
+%  {2008}
+%  {EM FUNDING}
+%  {London, UK}
+%  {\jobtitle{Intern}\\
+%  Worked closely with the Managing Director to design and create the company's logo.}\\
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION %
+%----------------------------------------------------------------------------------------
+\section{University Projects}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+  {Nov -- Dec 2019}
+  {PRIMARY SCHOOL PROJECT}
+  {}
+  {I spent 3 weeks teaching in two local primary schools, as part of the Mathematical Education course. I created detailed lesson plans with accompanying lesson materials. I improved my communication skills, built confidence, and persevered in a high-pressure new environment.}
+%------------------------------------------------
+\entry
+  {Jan -- Apr 2019}
+  {SYSTEM DESIGN PROJECT - PILLIP PRESCRIPTION DELIVERY SYSTEM}
+  {}
+  {\jobtitle{Prizewinner: Spiritus Commendation for Health and Wellbeing}\\
+  Our 3-part system comprised of a web application, a pill dispensing robot and a delivery robot. I was part of the Delivery Robot sub-team of the Hardware Team; \\
+  \textbf{My main roles}:
+  \begin{itemize}
+      \item Designed the team's logo, colour scheme and brand identity.
+      \item Constructed the Lego exoskeleton of the delivery robot, and developed a robust movement system using the Lego EV3.
+      \item Vision implementation using a Raspberry Pi, Logitech webcam and OpenCV Python libraries.
+  \end{itemize}
+  I developed presentation skills through the fortnightly demonstrations, conducted market research, participated in pitching our product, and showcased our system in action to guests at the Trade Fair.}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	PAGE 2 %
+%----------------------------------------------------------------------------------------
+\clearpage
+
+\begin{aside}
+ %hello
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	VOLUNTEERING SECTION %
+%----------------------------------------------------------------------------------------
+\section{Volunteering Experience}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+  {August 2020}
+  {THE UNIVERSITY OF EDINBURGH - SCHOOL OF MATHS OUTREACH}
+  {(remote)}
+  {\jobtitle{Virtual Maths Circle Volunteer}\\
+  Over 100 7-11 year old children from across the globe tuned in to this Zoom event. I was responsible for presenting some of the maths puzzles and making sure the event ran smoothly.\\
+  \textbf{Key Skills:} problem-solving Zoom technical difficulties in real-time; mathematical communication and engaging with kids.} 
+%------------------------------------------------
+\entry
+  {November 2019}
+  {WEB SUMMIT}
+  {Lisbon, Portugal}
+  {\jobtitle{Live Communications Team}\\
+  Gathered live quotes from different panellists and talks throughout the event for Web Summit press releases and social media use.\\
+  \textbf{Key Skills:} fast and accurate note-taking, adapting to unexpected changes, and micro-managing myself and fellow teammates.} 
+%------------------------------------------------
+\entry
+  {August 2016}
+  {RIO 2016™ OLYMPIC GAMES}
+  {Rio de Janeiro, Brazil}
+  {\jobtitle{International Relations and Protocol Operations}\\
+  Responsible for hospitality at the Beach Volleyball Arena (BVA) at Copacabana beach.\\ \textbf{Key Roles:} venue usher for the VIP guests, assisting security at the VIP entrance, translating between English, Brazilian Portuguese and French, and active conflict resolution and problem solving any issues that arose concerning the VIP area and its guests.}
+%------------------------------------------------
+\entry
+  {Apr 2016 - Jan 2020}
+  {EDINBURGH AND THE LOTHIANS QUIDDITCH CLUB - \href{https://holyroodhippogriffs.co.uk}{HOLYROOD HIPPOGRIFFS}}
+  {}
+  {\jobtitle{Committee Member} \\
+  Social Secretary (\italica{2019--2020});
+  Social Media Secretary (\italica{2016--2019});
+  Second Team Vice-captain (\italica{2016--2017});
+  Highlander Cup Tournament Director (\italica{2018 \& 2019}). \\
+  \textbf{Highlights:} I created engaging graphics and social media content - posting regularly to promote the club. My innovative and creative approach to improve the club's online presence resulted in a greater intake of new members, and I networked to secure sponsorships.}
+%------------------------------------------------
+\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION %
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+  {Sept 2015 - present}
+  {THE UNIVERSITY OF EDINBURGH}
+  {Edinburgh, UK}
+  {\jobtitle{BSc Computer Science and Mathematics}\\
+  \textbf{Computer Science Topics:} Programming (Functional and Object-Oriented); Logic; Formal and Natural Language Processing; Algorithms and Data Structures; Machine Learning; Database Systems; Text Technologies for Data Science.\\
+  \textbf{Mathematics Topics:} Linear Algebra (Analytical and Numerical); Several Variable Calculus; Differential Equations; Pure Mathematics (Algebra and Analysis); Statistics (Methodology, Computing and Learning); Mathematical Education; Linear Programming and Modelling. \\
+  \textbf{Outside courses:} Foundation Japanese; Foundation Spanish.}
+%------------------------------------------------
+\entry
+  {2008 -- 2015}
+  {CITY OF LONDON SCHOOL FOR GIRLS}
+  {London, UK}
+  {\textbf{A-Levels:} A* A* A A B \\ (Maths, French, Portuguese, Physics, Further Maths) \\
+  \textbf{GCSEs:} 12 \product A* (English Literature, English Language, Mathematics, Further Mathematics, French, Mandarin Chinese, Latin, Ancient Greek, History, Physics, Chemistry, Biology, Portuguese) \\
+  \textbf{Activities and Societies:} Senior Choir, Madrigal Group, Careers Committee, Football club.
+  }\\
+%------------------------------------------------
+\end{entrylist}
+
+
+
+%----------------------------------------------------------------------------------------
+%	END OF DOCUMENT %
+%----------------------------------------------------------------------------------------
+
+\end{document}
